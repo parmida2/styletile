@@ -1,0 +1,302 @@
+/* change these */
+
+
+* {
+    box-sizing: border-box;
+}
+
+/* THIS IS ALL meant for editing. You might want to do it differently,
+name the variables differently,
+use the fonts in other ways in the font hierarchy etc. */
+
+/* change these */
+:root {
+    --bg-color: #445c6b;
+    --link-color: #404040;
+    --link-hover-color: #b3ab98;
+    --color-4: #EDEEEE;
+    --color-5: #EDEEEE;
+
+    --primary-font: 'Syne', sans-serif;
+    --secondary-font: 'Assistant', sans-serif;
+    --main-text-color: #000;
+
+    --white-space: 1rem;
+}
+
+button {
+    transition: all 3s;
+}
+
+a {
+    transition: all 3s;
+}
+
+button:hover {
+    background-color: var(--link-hover-color);
+    transform: scale(1.5);
+}
+
+button:active {
+    background-color: var(--bg-color);
+}
+
+a:hover {
+    color: var(--link-hover-color);
+    font-size: 1.2rem;
+}
+
+html {
+    font-size: 100%;
+    font-family: var(--primary-font);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header,
+main,
+footer {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: calc(2 * var(--white-space));
+}
+
+.full-width {
+    background: var(--bg-color);
+    color: white;
+    width: 100%;
+}
+
+.header-wrapper h1 {
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    padding-right: 0.75em;
+    font-weight: bold;
+    color: #d9bc6c;
+}
+
+.header-wrapper h2 {
+    font-size: 1.6em;
+    color: var (--color-5);
+    font-weight: bold;
+    margin: var(--white-space) 0;
+    font-family: 'Gayathri', sans-serif;
+}
+
+.header-wrapper h3 {
+    font-size: 1.2rem;
+    padding-bottom: 0.5rem;
+    font-family: 'Gayathri', sans-serif;
+    font-style: italic;
+}
+
+.header-wrapper h4 {
+    font-size: 0.9rem;
+}
+
+main {
+    padding: calc(2 * var(--white-space));
+}
+
+section {
+    margin-bottom: calc(4 * var(--white-space));
+}
+
+.section-heading {
+    font-style: italic;
+    font-size: 1.3rem;
+    color: #404040;
+    margin: 0.5rem 0;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.swatches li {
+    margin-right: 5vw;
+    height: 15vw;
+    width: 20%;
+}
+
+ul li:last-child {
+    margin-right: 0;
+}
+
+.color-swatch-1 {
+    background-color: #3d3d3d;
+}
+
+.color-swatch-2 {
+    background-color: #7a7575;
+}
+
+.color-swatch-3 {
+    background-color: #a39b86;
+}
+
+.color-swatch-4 {
+    background-color: #9aafa3;
+}
+
+.color-swatch-5 {
+    background-color: #ceb367;
+}
+
+.textures li {
+    height: 30vw;
+    width: 50%;
+    margin-right: 5vw;
+}
+
+.texture-swatch-1 {
+    background: url(../img/texture1.jpg) top left repeat;
+
+}
+
+.texture-swatch-2 {
+    background: url(../img/texture2.jpg) top left repeat;
+}
+
+
+.texture-swatch-3 {
+    background: url(../img/texture3.jpg) top left repeat;
+}
+
+.images ul {
+    flex-direction: column;
+    text-align: center;
+}
+
+.images li {
+    display: block;
+    /*margin-right: 5vw;*/
+    margin-bottom: 1rem;
+}
+
+button {
+    padding: 1rem;
+    border-radius: 5%;
+    background: var(--link-color);
+    text-align: center;
+    text-decoration: none;
+    font: bold 1.25em/1 var(--primary-font);
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin: 0 1rem 1rem 0;
+    color: white;
+    border: none;
+    font-family: 'Grandstander';
+}
+
+.primary-button {
+    background: #3d3d3d;
+}
+
+.secondary-button {
+    background: #a39b86;
+}
+
+button:hover {
+  background-color: #cfcbc0;
+}
+
+
+button:focus-within {
+
+    border-radius: 10%;
+}
+
+.typography-main {
+    color: var(--main-text-color);
+}
+
+.h1-sample {
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.h2-sample {
+    font-family: var(--secondary-font);
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+p.typography-sample {
+    font-family: var(--secondary-font);
+    line-height: 1.5;
+    max-width: 960px;
+}
+
+.typography-sample {
+    font-family: 'Grandstander';
+}
+
+typography-sample:hover {
+    color: #cfcbc0;
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+a {
+    font-family: var(--primary-font);
+    color: var(--link-color);
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+p[class*="font-details-"] {
+    margin-top: 0.5rem;
+    margin-bottom: calc(2 * var(--white-space));
+    font-size: 0.75rem;
+    font-family: var(--secondary-font);
+    color: #6f6f6f;
+}
+
+.adjectives ul {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2rem;
+    color: #a39b86;
+}
+
+.adjectives ul {
+    flex-direction: column;
+}
+
+
+@media (min-width: 800px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 4rem;
+    }
+
+    .swatches li {
+        margin-right: 3%;
+        height: 10vw;
+        width: 20%;
+    }
+
+    .textures li {
+        height: 15vw;
+    }
+}
+
+@media (min-width: 900px) {
+    .adjectives ul {
+        flex-direction: row;
+    }
+}
